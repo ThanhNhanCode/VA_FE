@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <div>
+            <label for="soA">số A</label>
+            <input type="number" id="soA" required />
+        </div>
+        <div>
+            <label for="soB">số B</label>
+            <input type="number" id="soB" required />
+        </div>
+        <div>
+            <button type="button">Tính toán</button>
+            <span id="result"></span>
+           
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                soA = $('#soA').val();
+                soB = $('#soB').val();
+
+                result = parseInt(soA) + parseInt(soB);
+
+                $('#result').text(result);
+            })
+        })
+    </script>
+</body>
+</html>
