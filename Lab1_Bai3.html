@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="row-1"></div>
+        <div class="row-2"></div>
+        <div class="row-3"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('.row').css({
+                'width': '1500px',
+                'height': '700px',
+                'display': 'block'
+            });
+
+            $('.row-1').css({
+                'background-color':'#ccc4c4',
+                'width': '290px',
+                'height': '590px',
+                'display': 'inline-block'
+            });
+
+            $('.row-2').css({
+                'background-color':'#ccc4c4',
+                'width': '1190px',
+                'height': '590px',
+                'display': 'inline-block',
+                'margin-left': '15px'
+            });
+
+            $('.row-3').css({
+                'background-color':'#ccc4c4',
+                'width': '100%',
+                'height': '90px',
+                'display': 'inline-block',
+                'margin-top': '15px'
+            });
+
+        })
+
+    </script>
+
+</body>
+</html>

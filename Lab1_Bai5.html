@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="head">
+        <h1>My First Bootstrap 4 Page</h1>
+        <Span>Resize this responsive page to see the effect!</Span>
+    </header>
+
+    <nav id="nav">
+        <ul class="menu">
+            <li class="tag">Navbar</li>
+            <li class="tag">Link</li>
+            <li class="tag">Link</li>
+            <li class="tag">Link</li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section  id="about">
+           <article id="about_me">
+               <h3>About Me</h3>
+               <p>Photo of me:</p>
+               <p id="row-1">Fake Image</p>
+               <p>Some text about me in culpa qui officia deserunt mollit anim...</p>
+               <h3>Some Links</h3>
+               <p>Lorem ipsum dolor sit ame</p>
+               <ul class="click">
+                   <li class="lick-1">Active</li>
+                   <li class="lick-1">Link</li>
+                   <li class="lick-1">Link</li>
+                   <li class="lick-2">Disabled</li>
+               </ul>
+
+           </article>
+
+           <article id="title">
+                <h3>TITLE HEADING</h3>
+                <P>Title description, Dec 7, 2017</P>
+                <p class="row-2">Fake Image</p>
+                <p>Some text...</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venuam, quis nostrud
+                    exercitation ullamco.
+                </p>
+                <h3>TITLE HEADING</h3>
+                <P>Title description, Dec 7, 2017</P>
+                <p class="row-2">Fake Image</p>
+                <p>Some text...</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venuam, quis nostrud
+                    exercitation ullamco.
+                </p>
+           </article>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">Footer</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script >
+
+        $(document).ready(function(){
+            $('#head').css({
+                'width': '1000px',
+                'margin': 'auto',
+                'text-align': 'center',
+                'background-color': 'grey',
+                'padding': '40px 0 40px 0',
+                'border': '1px solid grey'
+            });
+
+            $('#nav').css({
+                'width': '1000px',
+                'background-color': 'black',
+                'color': 'white',
+                'margin': 'auto',
+                'padding': '1px 0 1px 0',
+                'border': '1px solid grey'
+            });
+
+            $('.menu').css({
+                'list-style': 'none',
+                'display': 'block',
+
+            });
+
+            $('.tag').css({
+                'display': 'inline-block',
+                'margin': ' 0 5px 0 5px'
+            });
+
+            $('#main').css({
+                'width': '1000px',
+                'margin': 'auto',
+                'border': '1px solid grey'
+            })
+
+            $('#about').css({
+                'width': '700px',
+                'margin': 'auto',
+                'display': 'block',
+                'height': '800px',
+                
+            });
+
+            $('#about_me').css({
+                'width': '300px',
+                'display': 'inline-block',
+            });
+
+            $('#row-1').css({
+                'width': '290px',
+                'padding-bottom': '150px',
+                'background-color': 'grey',
+            });
+
+            $('.click').css('list-style', 'none')
+
+            $('.lick-1').css({
+                'margin-bottom': '10px',
+                'color': 'blue'
+                });
+            $('.lick-1:hover').css({
+                'background-color': 'blue',
+                'color': 'white'
+            });
+
+            $('#title').css({
+                'width': '390px',
+                'float': 'right',
+            });
+
+            $('.row-2').css({
+                'width': '360px',
+                'padding-bottom': '150px',
+                'background-color': 'grey',            
+            });
+
+            $('#footer').css({
+                'margin': 'auto',
+                'background-color': 'grey',
+                'width': '1000px',
+                'text-align': 'center',
+                'padding-top': '20px',
+                'padding-bottom': '20px',
+                'border': '1px solid grey'
+            });
+
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>More Unequal Columns</h1>
+    <div class="row">
+        <div class="col-8_bg-success">1 of 2</div>
+        <div class="col-4_bg-warning">2 of 2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">1 of 4</div>
+        <div class="col-2">2 of 4</div>
+        <div class="col-3">3 of 4</div>
+        <div class="col-4">4 of 4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-1_4">1 of 4</div>
+        <div class="col-2_4">2 of 4</div>
+        <div class="col-3_4">3 of 4</div>
+        <div class="col-4_4">4 of 4</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.row').css({
+                'display': 'block',
+                'width': '1200px',
+                'margin-bottom': '20px'
+            });
+            $('.col-8_bg-success').css({
+                'background-color': '#33cc66',
+                'width': '790px',
+                'display': 'inline-block',
+                'padding-left': '10px'
+            })
+            $('.col-4_bg-warning').css({
+                'background-color': 'yellow',
+                'width': '390px',
+                'float': 'right',
+                'padding-left': '10px'  
+            })
+
+            $('.col-1').css({
+                'background-color': '#33cc66',
+                'width': '190px',
+                'position': 'absolute',
+                'padding-left': '10px',
+            })
+            $('.col-2').css({
+                'background-color': 'yellow',
+                'width': '190px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '200px'  
+            })
+            $('.col-3').css({
+                'background-color': '#33cc66',
+                'width': '190px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '400px'
+            })
+            $('.col-4').css({
+                'background-color': 'yellow',
+                'width': '590px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '600px'  
+            })
+
+            $('.col-1_4').css({
+                'background-color': '#33cc66',
+                'width': '390px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-top': '40px'
+            })
+            $('.col-2_4').css({
+                'background-color': 'yellow',
+                'width': '590px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '400px',
+                'margin-top': '40px' 
+            })
+            $('.col-3_4').css({
+                'background-color': '#33cc66',
+                'width': '90px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '1000px',
+                'margin-top': '40px'
+            })
+            $('.col-4_4').css({
+                'background-color': 'yellow',
+                'width': '90px',
+                'position': 'absolute',
+                'padding-left': '10px',
+                'margin-left': '1100px',
+                'margin-top': '40px'  
+            })
+
+
+        })
+        
+
+    </script>
+    
+</body>
+</html>
